@@ -84,18 +84,6 @@ The website demonstrates HTML5, CSS3, Flexbox, Grid, forms, selectors, media ele
 
 I used ChatGPT for planning, HTML/CSS code examples, optimization, explanation and README drafting. My AI usage is recorded above. I will review, understand and explain the code used in this project.
 
-## 7. Teacher Approval
-
-**Status:** [Approved / Pending]  
-**Approval Date:** [Date]  
-**Approval Evidence:** [Link to approval screenshot or email]
-
-## 8. GitHub Repository
-
-**Repository:** [Paste your GitHub repository URL]
-
-**Assignment 1 Tag:** `assignment-1` (add after completing Assignment 1)
-
 ## 9. Remaining Project Work
 
 Assignment 2 will include:
@@ -104,4 +92,3 @@ Assignment 2 will include:
 - Page 5 — Portfolio
 - Page 6 — Contact
 
-These pages will be added to the same GitHub repository.
