@@ -1,0 +1,433 @@
+
+/* General Styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f0;
+    color: #243e35;
+}
+
+
+/* Header and Navigation */
+
+header {
+    background-color: white;
+    border-bottom: 1px solid #e5e9e5;
+}
+
+.navbar {
+    max-width: 1500px;
+    margin: auto;
+    padding: 35px 55px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.logo {
+    font-size: 34px;
+    color: #243e35;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.menu a {
+    color: #222;
+    font-size: 17px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #54816e;
+}
+
+.menu .active {
+    color: #2e5948;
+    font-weight: bold;
+}
+
+.cart {
+    text-decoration: none;
+    color: #222;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/* About Us Section */
+
+.about-section {
+    max-width: 1500px;
+    margin: auto;
+    padding: 90px 55px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.about-text {
+    flex: 1;
+    min-width: 280px;
+}
+
+.about-text h4 {
+    color: #5d8373;
+    font-size: 17px;
+    letter-spacing: 4px;
+    margin-bottom: 30px;
+}
+
+.about-text h2 {
+    color: #243e35;
+    font-size: 58px;
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+
+.about-text p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 18px;
+}
+
+.main-button {
+    display: inline-block;
+    margin-top: 15px;
+
+    background-color: #2d5747;
+    color: white;
+    text-decoration: none;
+    padding: 18px 35px;
+
+    transition: background-color 0.3s;
+}
+
+.main-button:hover {
+    background-color: #1b382d;
+}
+
+.about-image {
+    flex: 1;
+    min-width: 280px;
+}
+
+.about-image img {
+    display: block;
+    width: 100%;
+    height: 440px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+
+/* Contact Section */
+
+.contact-section {
+    padding: 80px 40px;
+    background-color: white;
+}
+
+.contact-section h2 {
+    text-align: center;
+    color: #243e35;
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.section-description {
+    text-align: center;
+    font-size: 17px;
+    color: #555;
+    margin-bottom: 45px;
+}
+
+
+/* Contact Layout using CSS Grid */
+
+.contact-container {
+    max-width: 1150px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 35px;
+    align-items: start;
+}
+
+
+/* Contact Information */
+
+.contact-info {
+    background-color: #f1f5f0;
+    padding: 35px;
+    border-radius: 8px;
+    border: 1px solid #e0e7e1;
+}
+
+.contact-info h3 {
+    font-size: 27px;
+    margin-bottom: 20px;
+    color: #243e35;
+}
+
+.contact-info h4 {
+    color: #2d5747;
+    font-size: 18px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    color: #444;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+
+/* Contact Form Card */
+
+.contact-form {
+    background-color: #f1f5f0;
+    padding: 35px;
+    border-radius: 8px;
+    border: 1px solid #e0e7e1;
+}
+
+.contact-form h3 {
+    color: #243e35;
+    font-size: 27px;
+    margin-bottom: 25px;
+}
+
+
+/* Form Layout using Flexbox */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+form label {
+    color: #243e35;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+form input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #cbd4cc;
+    border-radius: 4px;
+    background-color: white;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+form textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #cbd4cc;
+    border-radius: 4px;
+    background-color: white;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    resize: vertical;
+}
+
+
+/* Input Focus Effect */
+
+form input:focus {
+    outline: none;
+    border-color: #2d5747;
+}
+
+form textarea:focus {
+    outline: none;
+    border-color: #2d5747;
+}
+
+
+/* Submit Button */
+
+form button {
+    background-color: #2d5747;
+    color: white;
+
+    padding: 16px 30px;
+    border: none;
+    border-radius: 4px;
+
+    font-size: 17px;
+    cursor: pointer;
+
+    transition: background-color 0.3s,
+                transform 0.3s;
+}
+
+form button:hover {
+    background-color: #1b382d;
+    transform: translateY(-3px);
+}
+
+
+/* JavaScript Validation Messages */
+
+.error {
+    color: #bd3333;
+    font-size: 14px;
+}
+
+#formMessage {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #243e35;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+
+/* Media Query 1 - Tablet */
+
+@media (max-width: 992px) {
+
+    .navbar {
+        padding: 25px;
+        justify-content: center;
+    }
+
+    .about-section {
+        padding: 60px 30px;
+    }
+
+    .about-text h2 {
+        font-size: 44px;
+    }
+
+    .about-image img {
+        height: 350px;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-section {
+        padding: 60px 30px;
+    }
+
+}
+
+
+/* Media Query 2 - Mobile */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+        padding: 25px 15px;
+    }
+
+    .logo {
+        font-size: 30px;
+    }
+
+    .menu {
+        gap: 15px;
+    }
+
+    .menu a {
+        font-size: 15px;
+    }
+
+    .about-section {
+        flex-direction: column;
+        padding: 45px 20px;
+        gap: 30px;
+    }
+
+    .about-text {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .about-text h4 {
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+
+    .about-text h2 {
+        font-size: 36px;
+    }
+
+    .about-text p {
+        font-size: 16px;
+    }
+
+    .about-image {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .about-image img {
+        height: 250px;
+    }
+
+    .contact-section {
+        padding: 50px 20px;
+    }
+
+    .contact-section h2 {
+        font-size: 29px;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .contact-info {
+        padding: 25px;
+    }
+
+    .contact-form {
+        padding: 25px;
+    }
+
+    .contact-info h3,
+    .contact-form h3 {
+        font-size: 23px;
+    }
+
+}

@@ -1,0 +1,204 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact - Book Store</title>
+
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <div class="navbar">
+
+            <h1 class="logo">Book Store</h1>
+
+            <nav class="menu">
+                <a href="home.html">Home</a>
+                <a href="media.html">Media & Info</a>
+                <a href="register.html">Register</a>
+                <a href="services.html">Services</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html" class="active">Contact</a>
+            </nav>
+
+            <a href="cart.html" class="cart">🛒 Cart</a>
+
+        </div>
+    </header>
+
+    <!-- About Us Section -->
+    <section class="about-section">
+
+        <div class="about-text">
+
+            <h4>WELCOME TO BOOK STORE</h4>
+
+            <h2>About Our Book Store</h2>
+
+            <p>
+                Book Store is a place for people who love
+                reading and learning. We provide books
+                from different categories for readers
+                of all ages.
+            </p>
+
+            <p>
+                Our collection includes programming,
+                science, history, novels, business
+                and educational books.
+            </p>
+
+            <p>
+                Our goal is to make reading easy,
+                enjoyable and accessible to everyone.
+            </p>
+
+            <a href="portfolio.html" class="main-button">
+                Explore Books
+            </a>
+
+        </div>
+
+        <div class="about-image">
+
+            <img
+                src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=900"
+                alt="Book Store Interior">
+
+        </div>
+
+    </section>
+
+    <!-- Contact Section -->
+    <main>
+
+        <section class="contact-section">
+
+            <h2>Contact Us</h2>
+
+            <p class="section-description">
+                Have a question? Send us a message.
+            </p>
+
+            <!-- CSS Grid Container -->
+            <div class="contact-container">
+
+                <!-- Contact Information -->
+                <div class="contact-info">
+
+                    <h3>Get In Touch</h3>
+
+                    <p>
+                        We are always happy to hear from
+                        our readers. Contact us if you
+                        have any questions.
+                    </p>
+
+                    <h4>Email</h4>
+
+                    <p>support@example.com</p>
+
+                    <h4>Location</h4>
+
+                    <p>Lahore, Pakistan</p>
+
+                    <h4>Customer Support</h4>
+
+                    <p>
+                        Contact us for book information
+                        and general questions.
+                    </p>
+
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form">
+
+                    <h3>Send Us a Message</h3>
+
+                    <form id="contactForm" novalidate>
+
+                        <!-- Name Input -->
+                        <label for="name">Full Name</label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Enter your full name">
+
+                        <span class="error" id="nameError"></span>
+
+                        <!-- Email Input -->
+                        <label for="email">Email Address</label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email address">
+
+                        <span class="error" id="emailError"></span>
+
+                        <!-- Subject Input -->
+                        <label for="subject">Subject</label>
+
+                        <input
+                            type="text"
+                            id="subject"
+                            name="subject"
+                            placeholder="Enter message subject">
+
+                        <!-- Message Input -->
+                        <label for="message">Your Message</label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="5"
+                            placeholder="Write your message"></textarea>
+
+                        <span class="error" id="messageError"></span>
+
+                        <!-- Submit Button -->
+                        <button type="submit">
+                            Send Message
+                        </button>
+
+                        <!-- JavaScript Result -->
+                        <p id="formMessage"
+                           role="status"
+                           aria-live="polite"></p>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            &copy; 2026 Book Store.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+    <!-- External JavaScript File -->
+    <script src="contact.js"></script>
+
+</body>
+</html>
